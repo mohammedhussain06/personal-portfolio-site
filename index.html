@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Mohammed Hussain Feroz Shaikh — AI Engineer & Full-Stack Developer. Final-year B.E. Computer Engineering student specializing in Agentic AI, LLMs, RAG pipelines, and full-stack applications." />
+  <meta name="keywords" content="Mohammed Hussain, AI Engineer, Full Stack Developer, LLMs, LangChain, RAG, Portfolio" />
+  <meta name="author" content="Mohammed Hussain Feroz Shaikh" />
+  <meta property="og:title" content="Mohammed Hussain — AI Engineer Portfolio" />
+  <meta property="og:description" content="Building Agentic AI workflows, RAG pipelines, and scalable full-stack applications." />
+  <title>Mohammed Hussain — AI Engineer & Full-Stack Developer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ─── CANVAS BACKGROUND ─── -->
+  <canvas id="neural-canvas"></canvas>
+
+  <!-- ─── CURSOR ─── -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursor-follower"></div>
+
+  <!-- ─── NAV ─── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">MH<span class="accent">.</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#research" class="nav-link">Research</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="mailto:hussain2006.shaikh@gmail.com" class="btn btn-nav" id="nav-cta">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ─── HERO ─── -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span>Open to AI Engineer Internship</span>
+      </div>
+      <h1 class="hero-title">
+        <span class="line">Mohammed Hussain</span>
+        <span class="line gradient-text">Feroz Shaikh</span>
+      </h1>
+      <p class="hero-role">
+        <span class="typed-wrapper">
+          <span class="typed" id="typed-text"></span><span class="typed-cursor">|</span>
+        </span>
+      </p>
+      <p class="hero-desc">
+        Final-year B.E. Computer Engineering student at the University of Mumbai, building <strong>Agentic AI workflows</strong>, robust <strong>RAG pipelines</strong>, and scalable <strong>full-stack applications</strong> that solve real-world problems.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary" id="hero-projects-btn">View Projects</a>
+        <a href="#contact" class="btn btn-outline" id="hero-contact-btn">Get in Touch</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/mohammedhussain06" target="_blank" rel="noopener" class="social-link" id="social-github" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/mohammed-hussain-shaikh/" target="_blank" rel="noopener" class="social-link" id="social-linkedin" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        </a>
+        <a href="mailto:hussain2006.shaikh@gmail.com" class="social-link" id="social-email" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="avatar-ring">
+        <div class="avatar-glow"></div>
+        <div class="avatar-inner">
+          <div class="avatar-initials">MH</div>
+        </div>
+      </div>
+      <div class="floating-card fc-1">
+        <span class="fc-icon">🤖</span>
+        <span>Agentic AI</span>
+      </div>
+      <div class="floating-card fc-2">
+        <span class="fc-icon">🧠</span>
+        <span>LLMs & RAG</span>
+      </div>
+      <div class="floating-card fc-3">
+        <span class="fc-icon">⚡</span>
+        <span>Full-Stack</span>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ─── ABOUT ─── -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Who I Am</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            I'm a final-year <strong>B.E. Computer Engineering</strong> student at the University of Mumbai with hands-on experience building production-grade AI systems. My passion lies at the intersection of <strong>Agentic AI</strong>, <strong>Natural Language Processing</strong>, and <strong>Full-Stack Engineering</strong>.
+          </p>
+          <p>
+            I live by a <em>"build, ship, and impact"</em> engineering culture — turning complex AI research into real, working products. From designing custom interpreted programming languages to publishing research in international journals, I constantly push myself to go beyond coursework.
+          </p>
+          <p>
+            Currently seeking an <strong>AI Engineer Internship</strong> to develop, optimize, and deploy scalable, end-to-end intelligent systems that make a difference.
+          </p>
+          <div class="about-stats">
+            <div class="stat-card">
+              <span class="stat-number">3+</span>
+              <span class="stat-label">Major Projects</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">3</span>
+              <span class="stat-label">Publications</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">4</span>
+              <span class="stat-label">Awards Won</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-details">
+          <div class="detail-card">
+            <div class="detail-icon">🎓</div>
+            <div class="detail-info">
+              <h4>Education</h4>
+              <div class="edu-item">
+                <strong>Rizvi College of Engineering</strong>
+                <span>B.E. Computer Science • University of Mumbai</span>
+                <span class="edu-year">2023 – Present</span>
+              </div>
+              <div class="edu-item">
+                <strong>Ismail Yusuf College</strong>
+                <span>HSC (Science) • Maharashtra State Board</span>
+                <span class="edu-year">2021 – 2023</span>
+              </div>
+            </div>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon">📍</div>
+            <div class="detail-info">
+              <h4>Location</h4>
+              <p>Mumbai, Maharashtra, India</p>
+            </div>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon">💼</div>
+            <div class="detail-info">
+              <h4>Status</h4>
+              <p>Available for <strong>AI Engineer Internship</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SKILLS ─── -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Technical Expertise</span>
+        <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-category" data-delay="0">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">💻</span>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Python</span>
+            <span class="tag">C</span>
+            <span class="tag">C++</span>
+            <span class="tag">Java</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="skill-category" data-delay="100">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🤖</span>
+            <h3>ML / AI</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">NumPy</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">Scikit-learn</span>
+            <span class="tag">TensorFlow</span>
+            <span class="tag">Keras</span>
+            <span class="tag">PyTorch</span>
+            <span class="tag">Reinforcement Learning</span>
+            <span class="tag">Matplotlib</span>
+            <span class="tag">Seaborn</span>
+          </div>
+        </div>
+
+        <div class="skill-category" data-delay="200">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🧠</span>
+            <h3>Deep Learning</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">ANNs</span>
+            <span class="tag">CNNs</span>
+            <span class="tag">RNNs</span>
+            <span class="tag">LSTMs</span>
+            <span class="tag">GANs</span>
+            <span class="tag">Neural Architecture Design</span>
+            <span class="tag">Model Training & Evaluation</span>
+          </div>
+        </div>
+
+        <div class="skill-category" data-delay="300">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">📝</span>
+            <h3>NLP</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Transformers</span>
+            <span class="tag">Attention Mechanisms</span>
+            <span class="tag">RAG Pipelines</span>
+            <span class="tag">Hugging Face</span>
+            <span class="tag">Sequence Models</span>
+            <span class="tag">Text Pre-processing</span>
+          </div>
+        </div>
+
+        <div class="skill-category skill-highlight" data-delay="400">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">⚡</span>
+            <h3>LLMs & Agentic AI</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag tag-accent">LangChain</span>
+            <span class="tag tag-accent">LangGraph</span>
+            <span class="tag tag-accent">Agno</span>
+            <span class="tag tag-accent">Multi-Agent Systems</span>
+            <span class="tag tag-accent">Prompt Engineering</span>
+            <span class="tag tag-accent">Vector Databases</span>
+            <span class="tag tag-accent">Memory & Tools</span>
+          </div>
+        </div>
+
+        <div class="skill-category" data-delay="500">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🌐</span>
+            <h3>Web Technologies</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">React.js</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Express.js</span>
+            <span class="tag">REST APIs</span>
+            <span class="tag">JWT</span>
+            <span class="tag">Flask</span>
+            <span class="tag">Django</span>
+          </div>
+        </div>
+
+        <div class="skill-category" data-delay="600">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">🗄️</span>
+            <h3>Databases</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">SQL</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">Pinecone</span>
+            <span class="tag">ChromaDB</span>
+          </div>
+        </div>
+
+        <div class="skill-category" data-delay="700">
+          <div class="skill-cat-header">
+            <span class="skill-cat-icon">☁️</span>
+            <h3>Tools & Cloud</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="tag">Git</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">AWS EC2</span>
+            <span class="tag">VS Code</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── PROJECTS ─── -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+      </div>
+      <div class="projects-grid">
+
+        <div class="project-card" id="project-skill-sculptor">
+          <div class="project-card-glow"></div>
+          <div class="project-header">
+            <div class="project-number">01</div>
+            <div class="project-links">
+              <a href="https://skill-sculptor-update-1.onrender.com/" target="_blank" rel="noopener" class="project-link" aria-label="Live Demo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="https://github.com/mohammedhussain06/Skill-Sculptor-update" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Skill-Sculptor</h3>
+          <p class="project-subtitle">AI-Driven EdTech Platform</p>
+          <p class="project-desc">
+            NLP-powered MCQ generation from course content using transformer-based models. Features reinforcement learning for personalized adaptive learning path optimization and gamified progress tracking. Research published in <strong>IJRAR 2025</strong>.
+          </p>
+          <div class="project-tags">
+            <span class="tag tag-sm">MERN Stack</span>
+            <span class="tag tag-sm">Reinforcement Learning</span>
+            <span class="tag tag-sm">NLP</span>
+            <span class="tag tag-sm">LLMs</span>
+            <span class="tag tag-sm">Transformers</span>
+          </div>
+        </div>
+
+        <div class="project-card" id="project-hscript">
+          <div class="project-card-glow"></div>
+          <div class="project-header">
+            <div class="project-number">02</div>
+            <div class="project-links">
+              <a href="https://h-script-frontend.vercel.app/" target="_blank" rel="noopener" class="project-link" aria-label="Live Demo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="https://github.com/mohammedhussain06/H-Script" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">H Script</h3>
+          <p class="project-subtitle">Custom Interpreted Programming Language</p>
+          <p class="project-desc">
+            A fully interpreted programming language built from scratch — complete with a custom <strong>Lexer</strong>, <strong>Parser</strong>, <strong>AST</strong>, and execution engine. Incorporates algorithmic optimization for evaluation and memory management in the runtime engine.
+          </p>
+          <div class="project-tags">
+            <span class="tag tag-sm">Compiler Design</span>
+            <span class="tag tag-sm">Python</span>
+            <span class="tag tag-sm">Lexer/Parser</span>
+            <span class="tag tag-sm">NLP</span>
+            <span class="tag tag-sm">GenAI</span>
+          </div>
+        </div>
+
+        <div class="project-card" id="project-zerodha">
+          <div class="project-card-glow"></div>
+          <div class="project-header">
+            <div class="project-number">03</div>
+            <div class="project-links">
+              <a href="https://zerodha-2-qyji.onrender.com/" target="_blank" rel="noopener" class="project-link" aria-label="Live Demo">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+              <a href="https://github.com/mohammedhussain06/Zerodha" target="_blank" rel="noopener" class="project-link" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              </a>
+            </div>
+          </div>
+          <h3 class="project-title">Zerodha Clone</h3>
+          <p class="project-subtitle">Full-Stack Trading Web Application</p>
+          <p class="project-desc">
+            Full-stack trading platform with real-time data simulation, authentication, and portfolio dashboard. Built with <strong>JWT-based security</strong> and RESTful API design following software engineering best practices.
+          </p>
+          <div class="project-tags">
+            <span class="tag tag-sm">React.js</span>
+            <span class="tag tag-sm">Node.js</span>
+            <span class="tag tag-sm">Express.js</span>
+            <span class="tag tag-sm">MongoDB</span>
+            <span class="tag tag-sm">REST APIs</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── RESEARCH ─── -->
+  <section class="section section-alt" id="research">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Academic Contributions</span>
+        <h2 class="section-title">Research & <span class="gradient-text">Publications</span></h2>
+      </div>
+      <div class="research-list">
+
+        <div class="research-card" id="research-smartlock">
+          <div class="research-year-badge">IJRAR 2025</div>
+          <div class="research-content">
+            <h3>Smart Lock: IoT-Enabled Access Control System</h3>
+            <p>Designed and implemented a multi-factor IoT authentication system; contributed to system architecture and experimental evaluation.</p>
+          </div>
+          <div class="research-icon">🔒</div>
+        </div>
+
+        <div class="research-card" id="research-uav">
+          <div class="research-year-badge">IJSREM 2026</div>
+          <div class="research-content">
+            <h3>IoT-Enabled UAV for Real-time Atmospheric Analysis & Predictive Weather Modeling</h3>
+            <p>Developed real-time sensor fusion pipeline and predictive ML models for atmospheric data analysis using UAV platforms.</p>
+          </div>
+          <div class="research-icon">🛸</div>
+        </div>
+
+        <div class="research-card" id="research-skillsculptor">
+          <div class="research-year-badge">IJRAR 2025</div>
+          <div class="research-content">
+            <h3>Skill-Sculptor: AI-Driven Adaptive EdTech Platform</h3>
+            <p>Researched and prototyped reinforcement-learning-based adaptive learning paths and NLP-powered assessment generation.</p>
+          </div>
+          <div class="research-icon">📚</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── ACHIEVEMENTS ─── -->
+  <section class="section" id="achievements">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Recognition</span>
+        <h2 class="section-title">Notable <span class="gradient-text">Achievements</span></h2>
+      </div>
+      <div class="achievements-grid">
+
+        <a href="https://drive.google.com/file/d/1_gKluj_XqxDpltXFpRS9JjvzdprRPLGU/view?usp=drive_link" target="_blank" rel="noopener" class="achievement-card achievement-card-link" id="achievement-hackverse">
+          <div class="achievement-medal">🥇</div>
+          <div class="achievement-content">
+            <h3>Special Mention Award</h3>
+            <p class="achievement-event">HackVerse 1.0 Hackathon</p>
+            <p class="achievement-desc">Recognized in the EdTech category for innovative AI-driven learning solution.</p>
+            <span class="cert-link">View Certificate →</span>
+          </div>
+        </a>
+
+        <a href="https://drive.google.com/file/d/1s5_vDSSyLuoilNTRP9fPc5R4i1g039DX/view?usp=drive_link" target="_blank" rel="noopener" class="achievement-card achievement-card-link" id="achievement-science-day">
+          <div class="achievement-medal">🏆</div>
+          <div class="achievement-content">
+            <h3>1st Prize</h3>
+            <p class="achievement-event">National Science Day</p>
+            <p class="achievement-desc">Won first prize for Accident Prevention project utilizing IR sensor detection technology.</p>
+            <span class="cert-link">View Certificate →</span>
+          </div>
+        </a>
+
+        <a href="https://drive.google.com/file/d/1zmJ5JtEqvMmFSSMSVUEWDXDC1WolbSVg/view?usp=drive_link" target="_blank" rel="noopener" class="achievement-card achievement-card-link" id="achievement-atharva">
+          <div class="achievement-medal">⚡</div>
+          <div class="achievement-content">
+            <h3>Top Participant</h3>
+            <p class="achievement-event">24-Hour Hackathon, Atharva College</p>
+            <p class="achievement-desc">Selected and recognized among top participants for rapid prototyping under constraints.</p>
+            <span class="cert-link">View Certificate →</span>
+          </div>
+        </a>
+
+        <a href="https://drive.google.com/file/d/16NvgIQWvQa6xvpso5c4ok9n8ap63ukIA/view?usp=drive_link" target="_blank" rel="noopener" class="achievement-card achievement-card-link" id="achievement-analytrix">
+          <div class="achievement-medal">📊</div>
+          <div class="achievement-content">
+            <h3>Datathon Competitor</h3>
+            <p class="achievement-event">Analytrix'26 Datathon</p>
+            <p class="achievement-desc">Competed in data science competition, demonstrating applied ML and analytics proficiency.</p>
+            <span class="cert-link">View Certificate →</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── CONTACT ─── -->
+  <section class="section section-alt" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Let's Connect</span>
+        <h2 class="section-title">Get in <span class="gradient-text">Touch</span></h2>
+        <p class="section-desc">I'm actively looking for AI Engineer internship opportunities. Whether you have a question, a project idea, or just want to say hi — my inbox is always open.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-item" id="contact-email">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg>
+            </div>
+            <div>
+              <p class="contact-label">Email</p>
+              <a href="mailto:hussain2006.shaikh@gmail.com" class="contact-value">hussain2006.shaikh@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item" id="contact-phone">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+            </div>
+            <div>
+              <p class="contact-label">Phone</p>
+              <a href="tel:+919967126455" class="contact-value">+91 9967126455</a>
+            </div>
+          </div>
+          <div class="contact-item" id="contact-location">
+            <div class="contact-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            </div>
+            <div>
+              <p class="contact-label">Location</p>
+              <span class="contact-value">Mumbai, India</span>
+            </div>
+          </div>
+          <div class="contact-socials">
+            <a href="https://github.com/mohammedhussain06" target="_blank" rel="noopener" class="btn btn-outline" id="contact-github-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="https://www.linkedin.com/in/mohammed-hussain-shaikh/" target="_blank" rel="noopener" class="btn btn-outline" id="contact-linkedin-btn">
+              <svg viewBox="0 0 24 24" fill="currentColor" style="width:18px;height:18px"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 .774 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              LinkedIn
+            </a>
+          </div>
+        </div>
+        <form class="contact-form" id="contact-form" onsubmit="handleFormSubmit(event)">
+          <div class="form-group">
+            <label for="form-name">Name</label>
+            <input type="text" id="form-name" name="name" placeholder="Your name" required />
+          </div>
+          <div class="form-group">
+            <label for="form-email">Email</label>
+            <input type="email" id="form-email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="form-subject">Subject</label>
+            <input type="text" id="form-subject" name="subject" placeholder="What's this about?" required />
+          </div>
+          <div class="form-group">
+            <label for="form-message">Message</label>
+            <textarea id="form-message" name="message" rows="5" placeholder="Tell me about the opportunity..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" id="form-submit-btn" style="width:100%">
+            <span id="btn-text">Send Message</span>
+            <svg id="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:18px;height:18px"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          </button>
+          <div class="form-success" id="form-success">
+            ✅ Message sent! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ─── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>Designed & Built by <strong>Mohammed Hussain Feroz Shaikh</strong></p>
+      <p class="footer-note">© 2025 · Mumbai, India</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
