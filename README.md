@@ -2,7 +2,7 @@
 
 > A modern, dark-themed personal portfolio website built with vanilla HTML, CSS & JavaScript.
 
-🌐 **Live Site:** [mohammedhussain06.github.io/portfolio-website](https://mohammedhussain06.github.io/portfolio-website) *(update after deploying)*
+🌐 **Live Site:** [mohammedhussain06.github.io/personal-portfolio-site](https://mohammedhussain06.github.io/personal-portfolio-site/)
 
 ---
 
